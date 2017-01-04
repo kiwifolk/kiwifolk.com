@@ -1,0 +1,155 @@
+/* At-Rules */
+@charset "iso-8859-1";
+
+A {text-decoration: underline;   color: #630063;}
+
+A:Hover {text-decoration: none;   color: #9C319C;}
+
+h1 {color: #630063;   font-weight: bold;   font-size: 24px;   font-family: Tahoma;}
+
+h2 {color: #0000cc;   font-weight: 700;   font-size: 16px;   font-family: Tahoma;}
+
+h3 {color: #630063;   font-weight: bold;   font-size: 14px;   font-family: Tahoma;}
+
+p,ul,blockquote,th {color: #630063;   font-weight: 500;   font-size: 12px;   font-family: Tahoma; text-align:justify;}
+
+p.right {color: #630063;   font-weight: 500;   font-size: 12px;   font-family: Tahoma; text-align:right;}
+
+th {color: #630063;   font-weight: 900;   font-size: 12px;   font-family: Tahoma; text-align:center;}
+
+center {color: #630063;   font-weight: 500;   font-size: 12px;   font-family: Tahoma;}
+
+.normal {color: #630063;   font-weight: 500;   font-size: 12px;   font-family: Tahoma;}
+
+.tiny {color: #0000cc;   font-weight: none;   font-size: 9px;   font-family: Tahoma;}
+
+.shout {color: #0000cc;   font-weight: bold;   font-size: 38px;   font-family: serif;}
+
+.menutitle {color: #630063;   font-weight: 800;   font-size: 12px;   font-family: Tahoma; margin-left:15px;}
+
+.menudesc {color: #0000cc;   font-weight: none;   font-size: 9px;   font-family: Tahoma; margin-left:15px;}
+
+p,h1,h2,h3,pre,ul,ol {margin:10px 10px 10px 10px;}
+
+img.pad {margin:10px 10px 10px 10px;}
+
+li,dt {color: #630063;   font-weight: 500;   font-size: 12px;   font-family: Tahoma; text-align:left; margin-left:2em;}
+
+p.big {line-height: 150%}
+
+ol.big {line-height: 150%;}
+
+.ban_ad {position:absolute; left:220px; top:16px}
+
+.search {position:absolute; left:700px; top:5px}
+
+.centermargin {margin:10px 10px 10px 10px;}
+
+
+body {
+		margin:5px 5px 0px 5px;
+		padding:0px;
+		color:none
+		}
+	
+	#leftcontent {
+		position: absolute;
+		left:5px;
+		top:90px;
+		width:200px;
+		background:#eee;
+		border:1px solid #ccc;
+		}
+
+	#centercontent {
+		background:#fff;
+   		margin-left:199px;
+   		margin-right:199px;
+		border:0px solid #000;
+		/*
+		IE5x PC mis-implements the box model. Because of that we sometimes have
+		to perform a little CSS trickery to get pixel-perfect display across browsers.
+		The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+		parsing bug in IE5x PC that will prematurly close a style rule when it runs
+		into the string "\"}\"". After that string appears in a rule, then, we can override
+		previously set attribute values and only browsers without the parse bug will
+		recognize the new values. So any of the name-value pairs above this comment
+		that we need to override for browsers with correct box-model implementations
+		will be listed below.
+		
+		We use the voice-family property because it is likely to be used very infrequently,
+		and where it is used it will be set on the body tag. So the second voice-family value 
+		of "inherit" will override our bogus "\"}\"" value and allow the proper value to
+		cascade down from the body tag.
+
+		The style rule immediately following this rule offers another chance for CSS2
+		aware browsers to pick up the values meant for correct box-model implementations.
+		It uses a CSS2 selector that will be ignored by IE5x PC.
+		
+		Read more at http://www.glish.com/css/hacks.asp
+		*/
+		
+		voice-family: "\"}\"";
+		voice-family: inherit;
+   		margin-left: 201px;
+   		margin-right:201px;
+		}
+		
+	html>body #centercontent {
+   		margin-left:201px;
+   		margin-right:131px;
+		}
+
+	#banner {
+		background:#99cccc;
+		height:90px;
+		border-top: 1px;
+		border-right: 1px;
+		border-left: 1px;
+		voice-family: "\"}\"";
+		voice-family: inherit;
+		height:39px;
+		}
+	html>body #banner {
+		height:85px;
+		}
+		
+	
+
+	#banner h1 {
+		font-size:14px;
+		padding:10px 10px 0px 10px;
+		margin:0px;
+		}
+	
+	#rightcontent {
+		position: absolute;
+		right:5px;
+		top:91px;
+		width:130px;
+		background:#FFEEFF;
+		border:1px solid #fef;
+		}
+ul.menu
+{
+float:left;
+width:100%;
+padding:0;
+margin:0;
+list-style-type:none;
+}
+a.menu
+{
+float:left;
+width:6em;
+text-decoration:none;
+color:white;
+background-color:purple;
+padding:0.2em 0.6em;
+border-right:1px solid white;}
+
+li.menu {display:inline}
+
+		
+		
+
